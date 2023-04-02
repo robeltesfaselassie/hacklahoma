@@ -1,0 +1,136 @@
+# include "mbed.h"
+
+
+PwmOut piezo(p21);
+
+// STAR WARS THEME!
+
+float D_6 = 1174.66;
+float G_6 = 1567.98;
+float D_7 = 2349.32;
+float C_7 = 2093.00;
+float B_6 = 1975.33;
+float A_6 = 1760.00;
+float G_7 = 3135.96;
+
+
+int main() {
+    while (true) {
+    piezo.period(1.0/D_6); //D3
+    piezo = 0.50;
+    wait(0.1);
+    piezo = 0;
+    wait(0.05);
+
+    piezo.period(1.0/D_6); //D3
+    piezo = 0.50;
+    wait(0.1);
+    piezo = 0;
+    wait(0.05);
+
+    piezo.period(1.0/D_6); //D3
+    piezo = 0.50;
+    wait(0.1);
+    piezo = 0;
+    wait(0.05);
+
+    piezo.period(1.0/G_6); //G3
+    piezo = 0.50;
+    wait(0.7);
+    piezo = 0;
+    wait(0.2);
+
+    piezo.period(1.0/D_7); //D4
+    piezo = 0.50;
+    wait(0.6);
+    piezo = 0;
+    wait(0.05);
+
+    piezo.period(1.0/C_7); //C4
+    piezo = 0.50;
+    wait(0.1);
+    piezo = 0;
+    wait(0.05);
+
+    piezo.period(1.0/B_6); //B3
+    piezo = 0.50;
+    wait(0.1);
+    piezo = 0;
+    wait(0.05);
+
+    piezo.period(1.0/A_6); //A3
+    piezo = 0.50;
+    wait(0.1);
+    piezo = 0;
+    wait(0.05);
+
+    piezo.period(1.0/G_7); //G4
+    piezo = 0.50;
+    wait(0.7);
+    piezo = 0;
+    wait(0.05);
+////////////////////////////////////////////
+    piezo.period(1.0/D_7); //D4
+    piezo = 0.50;
+    wait(0.6);
+    piezo = 0;
+    wait(0.05);
+
+    piezo.period(1.0/C_7); //C4
+    piezo = 0.50;
+    wait(0.1);
+    piezo = 0;
+    wait(0.05);
+
+    piezo.period(1.0/B_6); //B3
+    piezo = 0.50;
+    wait(0.1);
+    piezo = 0;
+    wait(0.05);
+
+    piezo.period(1.0/A_6); //A3
+    piezo = 0.50;
+    wait(0.1);
+    piezo = 0;
+    wait(0.05);
+
+    piezo.period(1.0/G_7); //G4
+    piezo = 0.50;
+    wait(0.7);
+    piezo = 0;
+    wait(0.05);
+
+    piezo.period(1.0/D_7); //D4
+    piezo = 0.50;
+    wait(0.6);
+    piezo = 0;
+    wait(0.05);
+
+    piezo.period(1.0/C_7); //C4
+    piezo = 0.50;
+    wait(0.1);
+    piezo = 0;
+    wait(0.05);
+
+    piezo.period(1.0/B_6); //B3
+    piezo = 0.50;
+    wait(0.1);
+    piezo = 0;
+    wait(0.05);
+
+    piezo.period(1.0/C_7); //C4
+    piezo = 0.50;
+    wait(0.1);
+    piezo = 0;
+    wait(0.05);
+
+    piezo.period(1.0/A_6); //A3
+    piezo = 0.50;
+    wait(0.7);
+    piezo = 0;
+    wait(0.05);
+
+    piezo = 0;
+    wait(2);}
+    while (1){}
+}
